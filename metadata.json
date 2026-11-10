@@ -1,0 +1,6 @@
+{
+  "name": "L'Anniversaire Royale | Luxury 3D Birthday Experience",
+  "description": "An exclusive five-star luxury 3D birthday celebration experience featuring interactive Three.js scenes, candlelight cake ceremony, golden surprise reveal, and editorial photo gallery.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

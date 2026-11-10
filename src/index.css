@@ -1,0 +1,67 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-cinzel: "Cinzel", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+
+  --color-midnight: #080808;
+  --color-charcoal: #151515;
+  --color-charcoal-light: #202020;
+  --color-gold-champagne: #D6B779;
+  --color-gold-metallic: #BFA16A;
+  --color-gold-light: #E8D3A7;
+  --color-gold-dark: #8C703E;
+  --color-ivory: #F5EBDD;
+  --color-ivory-dim: #D1C5B4;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+/* Custom Luxury Gold Gradient Text */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #FFF0D4 0%, #D6B779 40%, #BFA16A 70%, #997A40 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gold-shimmer {
+  background: linear-gradient(90deg, #D6B779 0%, #FFF4DE 50%, #BFA16A 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: goldShimmer 6s ease-in-out infinite alternate;
+}
+
+@keyframes goldShimmer {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* Luxury Card Borders */
+.border-gold-subtle {
+  border: 1px solid rgba(214, 183, 121, 0.22);
+}
+
+.border-gold-hover:hover {
+  border-color: rgba(214, 183, 121, 0.55);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #080808;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a261f;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D6B779;
+}
